@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-gray-800 bg-gray-50;
+  }
+  h1 {
+    @apply text-3xl font-bold md:text-4xl lg:text-5xl;
+  }
+  h2 {
+    @apply text-2xl font-bold md:text-3xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 font-medium transition-colors duration-200 rounded-md;
+  }
+  .btn-primary {
+    @apply text-white bg-indigo-600 hover:bg-indigo-700;
+  }
+  .nav-link {
+    @apply p-1 transition-colors border-b-2 border-transparent hover:border-indigo-500;
+  }
+}
